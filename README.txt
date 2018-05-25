@@ -1,2 +1,3 @@
 This is source code of our teamwork at 12nd-SupconCup-Robots-TransportChallenge(2017.5), in which my job is the software, control part.
-I use STM32F407 as the main MCU to control our robot, who 
+I use STM32F407 as the main MCU to control our robot, who tends to get as many blocks to get points as possible and prevent my rival to get as few blocks as possible.
+The whole project is based on ARM C. And the time I start to write codes for this project is early 2017, during winter break. It was the first time i’ve handle thing for such a big project. And it cost me almost 4 month to make it work smoothly, it is a project include 3600+ lines of code, all typed by hand, because most of the program are manipulated by registers rather than STM32’s Library. It was a big practice for me.
