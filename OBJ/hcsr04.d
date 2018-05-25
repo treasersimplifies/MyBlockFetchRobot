@@ -1,0 +1,13 @@
+..\obj\hcsr04.o: ..\HARDWARE\HCSR04\hcsr04.c
+..\obj\hcsr04.o: ..\HARDWARE\HCSR04\hcsr04.h
+..\obj\hcsr04.o: ..\SYSTEM\usart\usart.h
+..\obj\hcsr04.o: ..\SYSTEM\sys\sys.h
+..\obj\hcsr04.o: ..\SYSTEM\sys\stm32f4xx.h
+..\obj\hcsr04.o: ..\SYSTEM\sys\core_cm4.h
+..\obj\hcsr04.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\hcsr04.o: ..\SYSTEM\sys\core_cmInstr.h
+..\obj\hcsr04.o: ..\SYSTEM\sys\core_cmFunc.h
+..\obj\hcsr04.o: ..\SYSTEM\sys\core_cm4_simd.h
+..\obj\hcsr04.o: ..\SYSTEM\sys\system_stm32f4xx.h
+..\obj\hcsr04.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\hcsr04.o: ..\SYSTEM\delay\delay.h

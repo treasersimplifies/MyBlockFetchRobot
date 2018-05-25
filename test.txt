@@ -1,0 +1,174 @@
+
+
+test1:用于测试电机的配合性能
+		head_front();
+		delay_ms(10000);//10s
+		printf("head_front\n");
+		
+		head_behind();
+		delay_ms(10000);//10s
+		printf("head_behind\n");
+		
+		head_left();
+		delay_ms(10000);//10s
+		printf("head_left\n");
+		
+		head_right();
+		delay_ms(10000);//10s
+		printf("head_right\n");
+		
+测试结果：合格，能达到理想的效果
+
+test2：测试舵机的性能
+printf("reser starting...\n");
+
+		ENGINES_stop();
+		ServoL_Set(0);
+		ServoR_Set(0);
+		ServoB_Set(0);
+		ServoF_Set(0);
+		delay_ms(10000);
+		printf("reset fined.\n");
+		ServoF_Set(90);
+		printf("ServoF_Set(90)\n");
+		delay_ms(1000);
+		
+		ServoB_Set(0);
+		printf("ServoB_Set(0)\n");
+		delay_ms(1000);
+		ServoB_Set(90);
+		printf("ServoB_Set(90)\n");
+		delay_ms(1000);
+		
+		ServoR_Set(0);
+		printf("ServoR_Set(0)\n");
+		delay_ms(1000);
+		ServoR_Set(90);
+		printf("ServoR_Set(90)\n");
+		delay_ms(1000);
+		
+		ServoL_Set(0);
+		printf("ServoL_Set(0)\n");
+		delay_ms(1000);
+		ServoL_Set(90);
+		printf("ServoL_Set(90)\n");
+		delay_ms(1000);
+		
+test3：路线
+
+
+
+
+VER0=1;i=0;
+		if(HOR0==1||HOR1==1||HOR2==1||HOR3==1||HOR4==1||HOR5==1||HOR6==1||HOR7==1){
+			if(HOR0==1){j=0;ckstate->key[i][j]=1;}
+			if(HOR1==1){j=1;ckstate->key[i][j]=1;}
+			if(HOR2==1){j=2;ckstate->key[i][j]=1;}
+			if(HOR3==1){j=3;ckstate->key[i][j]=1;}
+			if(HOR4==1){j=4;ckstate->key[i][j]=1;}
+			if(HOR5==1){j=5;ckstate->key[i][j]=1;}
+			if(HOR6==1){j=6;ckstate->key[i][j]=1;}
+			if(HOR7==1){j=7;ckstate->key[i][j]=1;}
+		}
+		else{//VER0=1时无一个按键为1，则进入该else
+			VER0=0;
+			VER1=1;i=1;
+			if(HOR0==1||HOR1==1||HOR2==1||HOR3==1||HOR4==1||HOR5==1||HOR6==1||HOR7==1){
+				if(HOR0==1){j=0;ckstate->key[i][j]=1;}
+				if(HOR1==1){j=1;ckstate->key[i][j]=1;}
+				if(HOR2==1){j=2;ckstate->key[i][j]=1;}
+				if(HOR3==1){j=3;ckstate->key[i][j]=1;}
+				if(HOR4==1){j=4;ckstate->key[i][j]=1;}
+				if(HOR5==1){j=5;ckstate->key[i][j]=1;}
+				if(HOR6==1){j=6;ckstate->key[i][j]=1;}
+				if(HOR7==1){j=7;ckstate->key[i][j]=1;}
+			}
+			else{	//VER1=1时无一个按键为1，则进入该else
+				VER0=0;VER1=0;
+				VER2=1;i=2;
+				if(HOR0==1||HOR1==1||HOR2==1||HOR3==1||HOR4==1||HOR5==1||HOR6==1||HOR7==1){
+					if(HOR0==1){j=0;ckstate->key[i][j]=1;}
+					if(HOR1==1){j=1;ckstate->key[i][j]=1;}
+					if(HOR2==1){j=2;ckstate->key[i][j]=1;}
+					if(HOR3==1){j=3;ckstate->key[i][j]=1;}
+					if(HOR4==1){j=4;ckstate->key[i][j]=1;}
+					if(HOR5==1){j=5;ckstate->key[i][j]=1;}
+					if(HOR6==1){j=6;ckstate->key[i][j]=1;}
+					if(HOR7==1){j=7;ckstate->key[i][j]=1;}
+				}
+				else{//VER2=1时无一个按键为1，则进入该else
+					VER0=0;VER1=0;VER2=0;
+					VER3=1;i=3;
+					if(HOR0==1||HOR1==1||HOR2==1||HOR3==1||HOR4==1||HOR5==1||HOR6==1||HOR7==1){
+						if(HOR0==1){j=0;ckstate->key[i][j]=1;}
+						if(HOR1==1){j=1;ckstate->key[i][j]=1;}
+						if(HOR2==1){j=2;ckstate->key[i][j]=1;}
+						if(HOR3==1){j=3;ckstate->key[i][j]=1;}
+						if(HOR4==1){j=4;ckstate->key[i][j]=1;}
+						if(HOR5==1){j=5;ckstate->key[i][j]=1;}
+						if(HOR6==1){j=6;ckstate->key[i][j]=1;}
+						if(HOR7==1){j=7;ckstate->key[i][j]=1;}
+					}
+					else{//VER3=1时无一个按键为1，则进入该else
+						VER0=0;VER1=0;VER2=0;VER3=0;
+						VER4=1;i=4;
+						if(HOR0==1||HOR1==1||HOR2==1||HOR3==1||HOR4==1||HOR5==1||HOR6==1||HOR7==1){
+							if(HOR0==1){j=0;ckstate->key[i][j]=1;}
+							if(HOR1==1){j=1;ckstate->key[i][j]=1;}
+							if(HOR2==1){j=2;ckstate->key[i][j]=1;}
+							if(HOR3==1){j=3;ckstate->key[i][j]=1;}
+							if(HOR4==1){j=4;ckstate->key[i][j]=1;}
+							if(HOR5==1){j=5;ckstate->key[i][j]=1;}
+							if(HOR6==1){j=6;ckstate->key[i][j]=1;}
+							if(HOR7==1){j=7;ckstate->key[i][j]=1;}
+						}
+						else{//VER4=1时无一个按键为1，则进入该else
+							VER0=0;VER1=0;VER2=0;VER3=0;VER4=0;
+							VER5=1;i=5;
+							if(HOR0==1||HOR1==1||HOR2==1||HOR3==1||HOR4==1||HOR5==1||HOR6==1||HOR7==1){
+								if(HOR0==1){j=0;ckstate->key[i][j]=1;}
+								if(HOR1==1){j=1;ckstate->key[i][j]=1;}
+								if(HOR2==1){j=2;ckstate->key[i][j]=1;}
+								if(HOR3==1){j=3;ckstate->key[i][j]=1;}
+								if(HOR4==1){j=4;ckstate->key[i][j]=1;}
+								if(HOR5==1){j=5;ckstate->key[i][j]=1;}
+								if(HOR6==1){j=6;ckstate->key[i][j]=1;}
+								if(HOR7==1){j=7;ckstate->key[i][j]=1;}
+							}
+							else{//VER5=1时无一个按键为1，则进入该else
+								VER0=0;VER1=0;VER2=0;VER3=0;VER4=0;VER5=0;
+								VER6=1;i=6;
+								if(HOR0==1||HOR1==1||HOR2==1||HOR3==1||HOR4==1||HOR5==1||HOR6==1||HOR7==1){
+									if(HOR0==1){j=0;ckstate->key[i][j]=1;}
+									if(HOR1==1){j=1;ckstate->key[i][j]=1;}
+									if(HOR2==1){j=2;ckstate->key[i][j]=1;}
+									if(HOR3==1){j=3;ckstate->key[i][j]=1;}
+									if(HOR4==1){j=4;ckstate->key[i][j]=1;}
+									if(HOR5==1){j=5;ckstate->key[i][j]=1;}
+									if(HOR6==1){j=6;ckstate->key[i][j]=1;}
+									if(HOR7==1){j=7;ckstate->key[i][j]=1;}
+								}	
+								else{//VER6=1时无一个按键为1，则进入该else
+									VER0=0;VER1=0;VER2=0;VER3=0;VER4=0;VER5=0;VER6=0;
+									VER7=1;i=7;
+									if(HOR0==1||HOR1==1||HOR2==1||HOR3==1||HOR4==1||HOR5==1||HOR6==1||HOR7==1){
+										if(HOR0==1){j=0;ckstate->key[i][j]=1;}
+										if(HOR1==1){j=1;ckstate->key[i][j]=1;}
+										if(HOR2==1){j=2;ckstate->key[i][j]=1;}
+										if(HOR3==1){j=3;ckstate->key[i][j]=1;}
+										if(HOR4==1){j=4;ckstate->key[i][j]=1;}
+										if(HOR5==1){j=5;ckstate->key[i][j]=1;}
+										if(HOR6==1){j=6;ckstate->key[i][j]=1;}
+										if(HOR7==1){j=7;ckstate->key[i][j]=1;}
+									}	
+									else{//扫描完成，进入此else表示，没有一个按键被按下
+										i=8;
+										j=8;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}

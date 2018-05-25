@@ -1,0 +1,16 @@
+..\obj\engines.o: ..\HARDWARE\engines\engines.c
+..\obj\engines.o: ..\HARDWARE\engines\engines.h
+..\obj\engines.o: ..\SYSTEM\sys\sys.h
+..\obj\engines.o: ..\SYSTEM\sys\stm32f4xx.h
+..\obj\engines.o: ..\SYSTEM\sys\core_cm4.h
+..\obj\engines.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\engines.o: ..\SYSTEM\sys\core_cmInstr.h
+..\obj\engines.o: ..\SYSTEM\sys\core_cmFunc.h
+..\obj\engines.o: ..\SYSTEM\sys\core_cm4_simd.h
+..\obj\engines.o: ..\SYSTEM\sys\system_stm32f4xx.h
+..\obj\engines.o: ..\HARDWARE\pwm10111314\pwm10111314.h
+..\obj\engines.o: ..\HARDWARE\GPS\gps.h
+..\obj\engines.o: ..\HARDWARE\pwm912\pwm912.h
+..\obj\engines.o: ..\SYSTEM\delay\delay.h
+..\obj\engines.o: ..\SYSTEM\usart\usart.h
+..\obj\engines.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
